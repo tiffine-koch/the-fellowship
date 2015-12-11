@@ -1,0 +1,152 @@
+/* ----- Index page form and blackout ----- */
+
+div#popup {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+#blackout {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .75);
+	overflow: auto;
+}
+
+form {
+	max-width: 500px;
+	min-width: 250px;
+	padding: 5px 50px;
+	border: 2px solid #e7e6e6;
+	border-radius: 10px;
+	background-color: #fefdf9;
+	font-family: 'Lusitana', serif;
+	opacity: 1;
+	z-index: 3;
+}
+
+img#close {
+	display: inline-block;
+	position: relative;
+	left: 29em;
+	top: -1em;
+	width: 25px;
+}
+
+img#close:hover {
+	background-color: gray;
+	opacity: .9;
+	cursor: pointer;
+}
+
+/* ----- Game page ----- */
+
+section {
+	width: 95%;
+	text-align: center;
+	margin: 2em auto 1em auto;
+}
+
+.gamePic {
+	width: 80%;
+	display: flex;
+    margin: 0 auto 0 auto;
+	padding-bottom: 1.5em;
+}
+
+.deathPic {
+	width: 80%;
+	display: flex;
+    margin: 0 auto 0 auto;
+	margin-top: 2em;
+	margin-bottom: -1em;
+}
+
+.gameText {
+	text-align: left;
+	margin-bottom: 2em;
+	width: 80%;
+	margin: 0 auto 1.5em auto;
+	font-size: 1em;
+}
+
+p.gameText:first-letter, p.biotext:first-letter {
+	font-size: 1.5em;
+}
+
+hr {
+	border: 0;
+	background-color: gray;
+	height: 1px;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+/* ----- About Page ----- */
+
+#aboutUs{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+#aboutUsMain {
+	max-width: 80%;
+	margin: auto;
+}
+
+.bioSec {
+	width: 40%;
+	min-height: 475px;
+	padding: 1em;
+	border: 1px solid black;
+	min-width: 225px;
+	background-color: rgba(248, 248, 255, .8);
+}
+
+.bioPic {
+	float: left;
+	width: 165px;
+	height: 165px;
+	min-width: 100px
+	min-height:100px;
+	padding-right: 1em;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+.bioName{
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.bioul {
+	clear: both;
+	float: left;
+	margin-top: -.25em;
+	text-align: left;
+}
+
+p.biotext {
+	float: left;
+	clear: both;
+	text-align: left;
+	margin-top: -.5em;
+}
+
+#bio1, #bio2 {
+	margin-top: 5%;
+}
+
+#bio3, #bio4 {
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+}

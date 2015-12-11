@@ -1,4 +1,10 @@
  var ident = {
+
+   b1: $('#b1')
+   for (var i = 1; i <= 16; i++) {
+     ident['b' + String(i)] = $('#b' + String(i))
+   }
+
     b1: document.getElementById('b1'),
     b2: document.getElementById('b2'),
     b3: document.getElementById('b3'),
@@ -417,7 +423,3 @@ ident.deathbtn6b.addEventListener('click', function() {
 ident.deathbtn7b.addEventListener('click', function() {
     diediedie(ident.q7b, ident.b13b, ident.b14b, ident.deathbtn7b,11);
 });
-
-
-
-
