@@ -1,3 +1,6 @@
+var game = {};
+
+
  var ident = {
 
    b1: $('#b1')
