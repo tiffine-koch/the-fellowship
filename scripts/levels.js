@@ -8,14 +8,6 @@ var game = function(object){
   this.button = object.button;
 }
 
-// function Game (opts) {
-//   Object.keys(opts).forEach(function(e, index, keys) {
-//     this[e] = keys[e];
-//   },this);
-//
-//   this.question = opts.question;
-// }
-
 game.fetchJSON = function (data) {
   data.forEach(function(item) {
     var game = new Game(item);
